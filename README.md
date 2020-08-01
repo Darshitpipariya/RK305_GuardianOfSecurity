@@ -16,5 +16,5 @@
 Sometimes the user gets cheated by clicking on various links in the form of 
 Advertisements., While watching the video, While visiting the shopping sites and apps. So we are developing system that alert the users to be aware about link before visting it.
 
-<div>To detect the url we are Machine learning, Blacklisting.<br>
+<div>To detect the Malicious url we are using Machine learning, Blacklisting technique.<br>
 To alert the user we are developing extension for Browser.</div>
