@@ -1,0 +1,7 @@
+Pandas
+Sklearn
+json
+tensorflow 
+keras
+bs4
+request
