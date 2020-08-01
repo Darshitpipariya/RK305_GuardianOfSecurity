@@ -5,3 +5,4 @@ tensorflow
 keras
 bs4
 request
+python-whois
