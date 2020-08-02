@@ -17,34 +17,36 @@
               <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
             </svg>
                 </div>
-                <span class="ml-3 text-xl xl:block lg:hidden">Gardians_Of_Security</span>
+                <span class="ml-3 text-xl xl:block lg:hidden">Guardians_Of_Security</span>
             </a>
             <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
             </div>
         </div>
     </header>
+
 </head>
 
 <body>
     <section class="text-gray-400 bg-gray-900 body-font">
         <div class="md:flex-grow px-12 py-12">
-            <h2 class="text-2xl font-medium text-white title-font mb-2">Check the URL, Mailcious or not</h2>
+            <h2 class="text-2xl font-medium text-white title-font mb-2">Check the URL, Malicious or not</h2>
             <p class="leading-relaxed">In the Era full of internet, one click & take it all. Your security is everything ! So think before you clicked !! </p>
             </a>
         </div>
-
-        <div class="lg:w-4/6 md:w-1/2 bg-gray-800 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
-            <h2 class="text-white text-lg font-medium title-font mb-5">Enter URL</h2>
-            <div>
-                <input placeholder="Enter URL here" id="key" type="text" class="lg:w-4/6 md:w-1/2 bg-gray-900 rounded border text-white border-gray-900 focus:outline-none focus:border-indigo-500 text-base mx-4 px-4 py-2 mb-4">
-                <button id="btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" type="button">
+        <form action="/" method="POST">
+            {% csrf_token %}
+            <div class="lg:w-4/6 md:w-1/2 bg-gray-800 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+                <h2 class="text-white text-lg font-medium title-font mb-5">Enter URL</h2>
+                <div>
+                    <input placeholder="Enter URL here" id="url" name="url" type="text" class="lg:w-4/6 md:w-1/2 bg-gray-900 rounded border text-white border-gray-900 focus:outline-none focus:border-indigo-500 text-base mx-4 px-4 py-2 mb-4">
+                    <button id="btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" type="submit">
                     Check URL
                   </button>
+                </div>
+                <p id="details" class="text-xs text-gray-600 mt-3"></p>
+                <p id="output" class="text-xs text-gray-600 mt-3">Your details <span style="color: red;">&amp;</span> output will be shown here !!</p>
             </div>
-            <p id="details" class="text-xs text-gray-600 mt-3"></p>
-            <p id="output" class="text-xs text-gray-600 mt-3">Your details <span style="color: red;">&amp;</span> output will be shown here !!</p>
-        </div>
-
+        </form>
         <div class="container px-5 py-12 mx-auto flex flex-wrap">
             <div class="lg:w-2/3 mx-auto">
                 <div class="flex flex-wrap w-full bg-gray-800 py-32 px-10 relative mb-4">
@@ -202,9 +204,6 @@
 
         </div>
     </section>
-
-
-
 </body>
 
 </html>

@@ -54,6 +54,9 @@ def post_upload(request):
     return render(request, 'upload.html')
 
 def home(request):
+    if request.method == "POST":
+        url_link = request.POST.get('url')
+        
     e = {'domain_name': 'AMBERLYROBINSON.COM', 'registrar': 'GoDaddy.com, LLC', 'whois_server': 'whois.godaddy.com', 'referral_url': None, 'updated_date': [datetime.datetime(2018, 10, 18, 16, 58, 39), datetime.datetime(2018, 10, 18, 16, 58, 38)], 'creation_date':
         datetime.datetime(2008, 10, 17, 17, 47, 17), 'expiration_date': datetime.datetime(2020, 10, 17, 17, 47, 17), 'name_servers': ['NS1.BLUDOMAIN50.COM', 'NS2.BLUDOMAIN50.COM'], 'status': ['clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited',
         'clientRenewProhibited https://icann.org/epp#clientRenewProhibited', 'clientTransferProhibited https://icann.org/epp#clientTransferProhibited', 'clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited', 'clientTransferProhibited http://www.icann.org/epp#clientTransferProhibited',
