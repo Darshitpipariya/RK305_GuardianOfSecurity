@@ -2,7 +2,7 @@ var load = '<div class="d-flex justify-content-center"><div class="spinner-borde
 var ans = '<div class="container"><div class="row"><div class="col-sm p-3 mb-2 bg-dark text-white"><h2>LINK</h2>      <p>found as: <strong> </strong></p><h4><strong> <span id = "res"> </span> </strong> </h4> </div>'
 
 
-var url = 'http://127.0.0.1:8000/api/'
+var url = 'https://siht20.herokuapp.com/api/'
 
 $('#btn').click(function() {
     $("#loading").html(load);
