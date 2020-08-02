@@ -23,4 +23,7 @@ urlpatterns = [
     url(r'^api/', include('api.urls')),
     url(r'^upload/', views.upload, name='upload'),
     url(r'^post_upload/', views.post_upload, name='post_upload'),
+    url(r'^feedback/', views.feedback, name='feedback'),
+    url(r'', views.home, name='home'),
 ]
+ 

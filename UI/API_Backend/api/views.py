@@ -11,7 +11,7 @@ from django.conf import settings
 import json
 
 
-client = MongoClient('mongodb+srv://abhip1912:<password>@cluster0.ywymp.mongodb.net/<dbname>?retryWrites=true&w=majority')
+client = MongoClient('mongodb+srv://abhip1912:abcd1234@cluster0.ywymp.mongodb.net/<dbname>?retryWrites=true&w=majority')
 db = client.get_database('Demo')
 records = db.Blacklist
 
